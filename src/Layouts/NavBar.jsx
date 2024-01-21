@@ -1,12 +1,17 @@
-import React from 'react'
+import React , {useContext} from 'react'
 import { Link } from 'react-router-dom'
 import Marque from './Marque'
 import '../Styles/NavBar.css'
 import { BsCart4 } from 'react-icons/bs';
+import CartContext from '../Context/CartContext';
 
-// images
 
-const NavBar = ({cart}) => {
+
+const NavBar = () => {
+
+  const {cart} = useContext(CartContext)
+
+
   return (
     <div className='sticky-top'>
         <Marque/>

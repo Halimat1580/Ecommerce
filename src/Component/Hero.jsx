@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useContext} from "react";
 import "../styles/Hero.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
@@ -7,7 +7,11 @@ import useFetch from "../customHook/useFetch";
 import { ClipLoader } from "react-spinners";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
-const Hero = ({cart,setCart,handleAddToCart})=> {
+import CartContext from "../Context/CartContext";
+
+
+const Hero = ()=> {
+  const {handleAddToCart} = useContext(CartContext)
   const { data: data, loading: loading } = useFetch(
     "https://fakestoreapi.com/products/14"
   );

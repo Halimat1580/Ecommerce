@@ -1,6 +1,8 @@
 
 import React, { useEffect } from 'react'
+import Electronics from '../Component/Electronics'
 import Hero from '../Component/Hero'
+import Women from '../Component/Women'
 
 const Home = ({cart,handleAddToCart, setCart}) => {
     useEffect(()=>{
@@ -11,8 +13,15 @@ const Home = ({cart,handleAddToCart, setCart}) => {
     
   return (
     <div className='container'>
-        <Hero cart={cart} handleAddToCart={handleAddToCart} setCart={setCart}/>
+
+      <Hero/>
+      <Electronics/>
+      <Women/>
+        {/* <Hero cart={cart} handleAddToCart={handleAddToCart} setCart={setCart}/>
+        <Electronics cart={cart} handleAddToCart={handleAddToCart} setCart={setCart}/>
+        <Women handleAddToCart={handleAddToCart}/> */}
     </div>
+
   )
 }
 

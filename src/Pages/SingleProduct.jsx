@@ -1,15 +1,22 @@
 import Card from "react-bootstrap/Card";
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import ClipLoader from "react-spinners/ClipLoader";
 import { useParams } from 'react-router-dom'
 import useFetch from '../customHook/useFetch'
 import { ToastContainer, toast } from 'react-toastify';
+import CartContext from "../Context/CartContext";
 
-const SingleProduct = ({cart}) => {
+const SingleProduct = () => {
+  const {handleAddToCart} = useContext(CartContext )
     const {id} = useParams()
     const {data,laoding} = useFetch(`https://fakestoreapi.com/products/${id}`)
     console.log(id);
     const {title,price,image,description} = data;
+    useEffect(()=>{
+      document.title = `product | ${title}`
+    }
+
+    )
 
     const notify = () => {
       toast("An item has been added",{
