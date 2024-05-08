@@ -35,4 +35,4 @@ Feel free to use. Below is the process to get the project running:
 ## Deploying your project
 Github
 Vercel
-Netlify 
+Netlify # ecommerce
