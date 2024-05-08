@@ -13,6 +13,11 @@ const Women = () => {
     const { data, loading } = useFetch(
         "https://fakestoreapi.com/products/category/women's clothing"
       );
+      // const notify = () => {
+      //   toast("An item has been added",{
+      //     position:toast.POSITION.TOP_CENTER
+      //   });
+      // }
   return (
     <div>
         <div className='component-title'>

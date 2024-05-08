@@ -20,7 +20,7 @@ const NavBar = () => {
             <ul>
                 <li className="list-unstyled">
                     <Link className='text-decoration-none' to='/'>
-                    <h2 className='fst-italic text-white'>Halimat's Store</h2>
+                    <h2 className='fst-italic text-white'>Rihanbeautyempire</h2>
                     </Link>
                 </li>
             </ul>
