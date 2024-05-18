@@ -2,7 +2,7 @@ import Card from "react-bootstrap/Card";
 import React, { useContext, useEffect } from 'react'
 import ClipLoader from "react-spinners/ClipLoader";
 import { useParams } from 'react-router-dom'
-import useFetch from '../customHook/useFetch'
+import useFetch from '../CustomHook/useFetch'
 import { ToastContainer, toast } from 'react-toastify';
 import CartContext from "../Context/CartContext";
 
