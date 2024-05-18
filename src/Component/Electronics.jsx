@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "../styles/electronics.css";
+import "../Styles/Electronics.css"
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
