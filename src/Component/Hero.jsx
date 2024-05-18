@@ -1,9 +1,9 @@
 import React,{useContext} from "react";
-import "../styles/Hero.css";
+import "../Styles/Hero.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-import useFetch from "../customHook/useFetch";
+import useFetch from "../CustomHook/useFetch";
 import { ClipLoader } from "react-spinners";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';

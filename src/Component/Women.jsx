@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import '../styles/Women.css'
+import '../Styles/Women.css'
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
