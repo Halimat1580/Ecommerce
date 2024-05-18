@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 
-import useFetch from "../customHook/useFetch";
+import useFetch from "../CustomHook/useFetch";
 import { ToastContainer, toast } from 'react-toastify';
 import CartContext from '../Context/CartContext';
 
